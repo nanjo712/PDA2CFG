@@ -1,0 +1,16 @@
+5
+S A B C D
+4
+a b c d
+S
+9
+S a
+S bA
+S B
+S ccD
+A abB
+A e
+B aA
+C ddC
+D ddd
+
