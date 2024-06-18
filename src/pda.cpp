@@ -189,10 +189,6 @@ ContextFreeGrammar PDA::convertToCFG()
             auto pushSize = stackPush.size();
             for (auto sta = states.begin(); sta != states.end(); sta++)
             {
-                if (std::distance(sta, states.end()) < pushSize)
-                {
-                    break;
-                }
                 auto chosenStates = generateSequence(*this, pushSize);
                 for (auto chosenState : chosenStates)
                 {
