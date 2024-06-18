@@ -1,7 +1,6 @@
 #ifndef PDA_HPP_
 #define PDA_HPP_
 
-#include <iterator>
 #include <set>
 #include <string>
 #include <vector>
