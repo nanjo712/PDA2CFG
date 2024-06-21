@@ -60,8 +60,6 @@ class ContextFreeGrammar
     void removeEpsilonProductions();
     void removeUnitProductions();
     void removeUselessProductions();
-
-    void convertToChomskyNormalForm();
 };
 
 #endif
