@@ -1,16 +1,13 @@
-5
-S A B C D
-4
-a b c d
+3
+S A B
+3
+a b c
 S
-9
-S a
-S bA
-S B
-S ccD
-A abB
-A e
-B aA
-C ddC
-D ddd
-
+7
+S ASB
+S e
+A aAS
+A a
+B SBS
+B A
+B bb

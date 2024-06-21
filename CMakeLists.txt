@@ -12,7 +12,7 @@ target_include_directories(CFG PUBLIC include)
 
 add_executable(
     simplify_cfg
-    src/main.cpp
+    src/simplify.cpp
 )
 target_link_libraries(simplify_cfg CFG)
 
