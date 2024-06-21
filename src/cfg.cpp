@@ -224,7 +224,7 @@ void ContextFreeGrammar::findReachableSymbols()
     {
         auto lhs = production.lhs;
         auto rhs = production.rhs;
-        if (Ndot.find(lhs) != Ndot.end() ||
+        if (Ndot.find(lhs) != Ndot.end() &&
             std::all_of(
                 rhs.begin(), rhs.end(), [&N0, this](std::string symbol)
                 { return N0.find(symbol) != N0.end() || isTerminal(symbol); }))
