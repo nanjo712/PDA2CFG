@@ -207,14 +207,14 @@ void ContextFreeGrammar::findReachableSymbols()
     } while (Ndot != N0);
 
     auto nonTerminalsCopy = this->nonTerminals;
-    nonTerminalsCopy.clear();
+    this->nonTerminals.clear();
     std::set_intersection(
         nonTerminalsCopy.begin(), nonTerminalsCopy.end(), Ndot.begin(),
         Ndot.end(),
         std::inserter(this->nonTerminals, this->nonTerminals.begin()));
 
     auto terminalsCopy = this->terminals;
-    terminalsCopy.clear();
+    this->terminals.clear();
     std::set_intersection(
         terminalsCopy.begin(), terminalsCopy.end(), Ndot.begin(), Ndot.end(),
         std::inserter(this->terminals, this->terminals.begin()));
